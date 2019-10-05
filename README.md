@@ -46,8 +46,7 @@ If you want to repeat the repo, pls following steps:
 ```
 3. cmd to start:
 ```python
-python bert_main2.py \
-		--data_dir . \ ## 数据集的路径.我的train.csv和dev.csv都放到当前目录下了
+python bert_main2.py --data_dir . \\ ## 数据集的路径.我的train.csv和dev.csv都放到当前目录下了
 		--output_dir BERT2_output \ ## 输出结果的路径
 		--train_batch_size 4 \  
 		--num_train_epochs 10 \
