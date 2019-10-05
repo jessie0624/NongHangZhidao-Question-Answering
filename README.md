@@ -8,7 +8,9 @@ If you want to repeat the repo, pls following steps:
 
 1. pls install transformers first refering https://huggingface.co/transformers/installation.html
 
-2. To make it avaliable to run, I change 2 function in transformers: 1. adding a line in convert_toknes_to_ids in 'tokenization_utils.py' when len(ids)>max_len,so that it can auto cutdown the input sequence. 2. changing 'truncate_first_sequence' to False.
+2. To make it avaliable to run, I change 2 functions in transformers: 
+   'tokenization_utils.py' -  adding a line in convert_toknes_to_ids  when len(ids)>max_len,so that it can auto cutdown the input sequence. 
+   'glue.py' - changing 'truncate_first_sequence' to False.
 ```python
     def convert_tokens_to_ids(self, tokens):
         """ Converts a single token, or a sequence of tokens, (str/unicode) in a single integer id
